@@ -7,7 +7,7 @@ int main(int cnt, char* args[])
 		std::cout << cnt <<" params were passed and they are : \n";
 		std::for_each(args,args+cnt,
 			[](decltype(args[0]) &param){
-										std::cout << param<<'\n';
-									});
+				std::cout << param<<'\n';
+			});
 	}
 }
